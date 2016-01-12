@@ -7,19 +7,69 @@
 			</div>
 			<ul class="ht-cats-list" ng-controller="con">
 				<li ng-class="{red:hover}" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
-					<a href="/#авто-мото"><span class="auto">Авто&Мото</span></a>	
-					<ul class = "sub-items"> 
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li> 
-						<li><a href="#">item</a></li> 
-						<li><a href="#">item</a></li> 
-						<li><a href="#">item</a></li> 
-						<li><a href="#">item</a></li> 
+					<a href="/#авто-мото"><span class="auto">Авто&Мото</span></a>
+					<ul>
+					<td>
+						<ul class = "sub-items"> 
+						<div class="sub-cats-title">
+							<span>Англилал гарчиг</span>
+						</div>
+							<li><a href="#">item</a></li>
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+						</ul>
+					</td>
 					</ul>
-	
 				</li>
-				<li><a href="javascript:void(0)"><span class="apartment">Амьдрах сууц</span></a></li>
-				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a></li>	
+				<li><span class="apartment"><a href="javascript:void(0)">Амьдрах сууц</a></span>
+					<ul>
+					<td>
+						<ul class = "sub-items"> 
+						<div class="sub-cats-title">
+							<span>Англилал гарчиг</span>
+						</div>
+							<li><a href="#">item</a></li>
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+						</ul>
+					</td>
+					<td>
+						<ul class = "sub-items"> 
+						<div class="sub-cats-title">
+							<span>Англилал гарчиг</span>
+						</div>
+							<li><a href="#">item</a></li>
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+						</ul>
+					</td><td>
+						<ul class = "sub-items"> 
+						<div class="sub-cats-title">
+							<span>Англилал гарчиг</span>
+						</div>
+							<li><a href="#">item</a></li>
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+							<li><a href="#">item</a></li> 
+						</ul>
+					</td>
+				</ul>
+				</li>
+				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a>
+				
+
+				</li>	
 				<li ng-class="{red:hover}" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
 					<a href="javascript:void(0)"><span class="auto">Авто&Мото</span></a>			
 				</li>
@@ -30,6 +80,7 @@
 				</li>
 				<li><a href="javascript:void(0)"><span class="apartment">Амьдрах сууц</span></a></li>
 				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a></li>
+				<div id="createSubItem"></div><div id="imageSlider"></div>
 			</ul>
 		</div>
 		<div class="banner1">
@@ -67,8 +118,8 @@
 	<!--Image slider css start-->
 		
 	.container{
-		width:800px;
-		height:400px;
+		width:468px;
+		height:423px;
 		padding:20px;
 		border:1px solid gray;
 		-webkit-box-sizing:border-box;
@@ -82,7 +133,7 @@
 	#image_slider{
 		position: relative;
 		overflow: hidden;
-		height: 280px;
+		height: 423px;
 		padding:0;
 		left:0;
 	}
@@ -96,47 +147,52 @@
 	
 	<!--Image slider css end-->
 
-	.sub-items :hover > ul {
-	 	left: 200px;
-	  	-webkit-transition: left 200ms ease-in; 
-	  	-moz-transition: left 200ms ease-in; 
-	  	-ms-transition: left 200ms ease-in; 
-	  	transition: left 200ms ease-in; 
-	  	} 
-	.sub-items > ul { 
-		position: absolute; 
-		background-color: #333; 
-		top: 0; 
-		left: -200px; 
-		min-width: 200px; 
-		z-index: -1; height: 100%; 
-		-webkit-transition: left 200ms ease-in; 
-		-moz-transition: left 200ms ease-in; 
-		-ms-transition: left 200ms ease-in; 
-		transition: left 200ms ease-in; 
-	} 
-	.sub-items > ul li a:hover { 
-		background-color:#2e2e2e; 
-	}
-
-	.home-top {float:left; width: 100%;}
-	.home-top-cats {float:left; padding: 0 5px; width: 250px;}
-		.ht-cats-title {padding:4px 10px; background-color: #f2f2f2; border-bottom: 1px solid #e9e9e9;}
-		.ht-cats-title span {color: #333; font-size: 90%; font-weight: bold;}
-		ul.ht-cats-list {background-color: #fff;}	
-		ul.ht-cats-list li a {display:block; padding:5px 10px; color: #333; font-size:85%; text-decoration: none;}								
-		ul.ht-cats-list li a:hover {color: #f90; padding:4px 10px; border-top: 1px solid #eee; border-bottom:1px solid #eee;}	
 		
-		ul.ht-cats-list li a span {position:relative; display:block; padding-left: 40px;}
+	.home-top {float:left; width: 100%; z-index: 1;}
+	.home-top-cats { float:left; padding: 0 5px; width: 250px; }
+		.ht-cats-title { padding:4px 10px; background-color: #f2f2f2; border-bottom: 1px solid #e9e9e9;}
+		.ht-cats-title span {color: #333; font-size: 90%; font-weight: bold;}
+		.ht-cats-list { background-color: #fff; min-width:200px; float:left; z-index: 2 }
+		.sub-cats-title { padding:4px 10px; background-color: #f2f2f2; border-bottom: 1px solid #e9e9e9;}
+		.sub-cats-title span {color: #333; font-size: 80%; font-weight: bold;}
+		.sub-items { float: left; z-index: -1 }
+		.home-top-cats ul { list-style-type: none; } 
+		.home-top-cats ul li a { 
+			padding:10px 0px; display:block; background-color: #fff; text-decoration:none; 
+		} 
+		.home-top-cats ul li a:hover { 
+			color: #f90; 
+			border-top: 1px solid #eee; 
+			border-bottom:1px solid #eee;
+		}
+		.home-top-cats ul li:hover > ul { 
+			left: 240px;
+			top: 50px; 
+			float: left;
+		} 
+		.home-top-cats ul li > ul { 
+			position: absolute; 
+			background-color: #fff; 
+			min-width:200px;
+			top: 0; 
+			left: -2000px; 
+			z-index: -1; 
+			height: 300px; 
+			border: 1px solid #eee;
+		} 
+		.home-top-cats ul li > ul li:hover {position: absolute; z-index: 1; display: block; }
+		.home-top-cats ul li > ul:hover { z-index: 1; }
+		.home-top-cats ul li > ul li a:hover { background-color:#fff; color: #f90; z-index: 1; }
+		
 	
-	.banner1 {float:left; width:648px; height:423px; background-color:#eee; border:1px solid #ccc;}	
+	.banner1 {float:left; width:648px; height:423px; z-index: -1; background-color:#eee; border:1px solid #ccc;}	
 	.banner2 {float:left; width:348px; height:423px; background-color:#eee; border:1px solid #ccc;}
 	
 	.home-top-items {float:left; margin: 20px 0;}
 		.ht-item {float:left; width:230px; height:270px; padding:2px 4px; margin-right:20px; overflow:hidden; background-color:#eee;}	
 		.ht-item-last {float:left; width:230px; height:270px; background-color:#eee;}	
 		
-		
+	
 
 </style>
 <script type="text/javascript" src="./js/zuuch.js"></script>

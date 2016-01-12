@@ -10,6 +10,33 @@ function hello(){
 	alert("Hello world");
 }
 
+function createUl() {
+  var ul = document.createElement('ul');
+  ul.setAttribute('id', 'sub-items');
+
+  var t, tt;
+  subItems = ['element', 'element1', 'element2', 'element3'];
+  subItems2 = ['element', 'element1', 'element2', 'element3'];
+
+  document.getElementById('createSubItem').appendChild(ul);
+  subItems.forEach(createSubItems);
+
+  document.getElementById('createSubItem').appendChild(ul);
+  subItems2.forEach(createSubItems);
+
+  function createSubItems(element, index, arr) {
+    var li = document.createElement('li');
+    li.setAttribute('class', 'item');
+
+    ul.appendChild(li);
+
+    t = document.createTextNode(element);
+
+    li.innerHTML = li.innerHTML + element;
+  }
+}
+createUl();
+
 
 
 function init(){	
