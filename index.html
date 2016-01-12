@@ -12,7 +12,7 @@
 					<td>
 						<ul class = "sub-items"> 
 						<div class="sub-cats-title">
-							<span>Англилал гарчиг</span>
+							<span>Ангилал гарчиг</span>
 						</div>
 							<li><a href="#">item</a></li>
 							<li><a href="#">item</a></li> 
@@ -26,44 +26,41 @@
 				</li>
 				<li><span class="apartment"><a href="javascript:void(0)">Амьдрах сууц</a></span>
 					<ul>
-					<td>
-						<ul class = "sub-items"> 
-						<div class="sub-cats-title">
-							<span>Англилал гарчиг</span>
-						</div>
-							<li><a href="#">item</a></li>
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-						</ul>
-					</td>
-					<td>
-						<ul class = "sub-items"> 
-						<div class="sub-cats-title">
-							<span>Англилал гарчиг</span>
-						</div>
-							<li><a href="#">item</a></li>
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-						</ul>
-					</td><td>
-						<ul class = "sub-items"> 
-						<div class="sub-cats-title">
-							<span>Англилал гарчиг</span>
-						</div>
-							<li><a href="#">item</a></li>
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-						</ul>
-					</td>
+						<tr>
+							<td>
+								<ul class = "sub-items"> 
+									<div class="sub-cats-title">
+										<span>Ангилал гарчиг</span>
+									</div>
+									<li><a href="#">item</a></li>
+									<li><a href="#">item</a></li> 
+									<li><a href="#">item</a></li> 
+									<li><a href="#">item</a></li> 
+								</ul>
+							</td>
+							<td>
+								<ul class = "sub-items"> 
+									<div class="sub-cats-title">
+										<span>Ангилал гарчиг</span>
+									</div>
+									<li><a href="#">item</a></li>
+									<li><a href="#">item</a></li> 
+									<li><a href="#">item</a></li> 
+									<li><a href="#">item</a></li> 
+								</ul>
+							</td>
+							<td>
+								<ul class = "sub-items"> 
+								<div class="sub-cats-title">
+									<span>Ангилал гарчиг</span>
+								</div>
+									<li><a href="#">item</a></li>
+									<li><a href="#">item</a></li> 
+									<li><a href="#">item</a></li> 
+									<li><a href="#">item</a></li> 
+								</ul>
+							</td>
+						</tr>
 				</ul>
 				</li>
 				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a>
@@ -80,7 +77,7 @@
 				</li>
 				<li><a href="javascript:void(0)"><span class="apartment">Амьдрах сууц</span></a></li>
 				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a></li>
-				<div id="createSubItem"></div><div id="imageSlider"></div>
+				<div id="createSubItem"></div>
 			</ul>
 		</div>
 		<div class="banner1">
@@ -120,12 +117,11 @@
 	.container{
 		width:468px;
 		height:423px;
-		padding:20px;
 		border:1px solid gray;
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
-	  background: black;
+	  	background: black;
 	}
 	.image-slider-wrapper{
 		overflow: hidden;
@@ -148,7 +144,7 @@
 	<!--Image slider css end-->
 
 		
-	.home-top {float:left; width: 100%; z-index: 1;}
+	.home-top {float:left; width: 100%; z-index: 2;}
 	.home-top-cats { float:left; padding: 0 5px; width: 250px; }
 		.ht-cats-title { padding:4px 10px; background-color: #f2f2f2; border-bottom: 1px solid #e9e9e9;}
 		.ht-cats-title span {color: #333; font-size: 90%; font-weight: bold;}
@@ -156,9 +152,17 @@
 		.sub-cats-title { padding:4px 10px; background-color: #f2f2f2; border-bottom: 1px solid #e9e9e9;}
 		.sub-cats-title span {color: #333; font-size: 80%; font-weight: bold;}
 		.sub-items { float: left; z-index: -1 }
-		.home-top-cats ul { list-style-type: none; } 
+		.home-top-cats ul { list-style-type: none; border: 1px solid #eee; } 
 		.home-top-cats ul li a { 
 			padding:10px 0px; display:block; background-color: #fff; text-decoration:none; 
+		} 
+		.home-top-cats ul li ul {
+			padding: 0px 0px 0px 0px;
+			width: auto;
+			height: auto;
+		}
+		.home-top-cats ul li ul ul{ 
+			padding:0px 0px 0px 0px; display:block; background-color: #fff; text-decoration:none; 
 		} 
 		.home-top-cats ul li a:hover { 
 			color: #f90; 
@@ -166,30 +170,35 @@
 			border-bottom:1px solid #eee;
 		}
 		.home-top-cats ul li:hover > ul { 
-			left: 240px;
+			left: 255px;
 			top: 50px; 
 			float: left;
+			position: fixed;
+			-moz-transition: border-color 0.5s ease-in-out;
+			-webkit-transition: border-color 0.5s ease-in-out;
+			-ms-transition: border-color 0.5s ease-in-out;
+			transition: border-color 0.5s ease-in-out;
 		} 
 		.home-top-cats ul li > ul { 
 			position: absolute; 
 			background-color: #fff; 
-			min-width:200px;
+			min-width: auto;
 			top: 0; 
 			left: -2000px; 
-			z-index: -1; 
-			height: 300px; 
+			height: auto; 
 			border: 1px solid #eee;
+
 		} 
-		.home-top-cats ul li > ul li:hover {position: absolute; z-index: 1; display: block; }
-		.home-top-cats ul li > ul:hover { z-index: 1; }
-		.home-top-cats ul li > ul li a:hover { background-color:#fff; color: #f90; z-index: 1; }
+		.home-top-cats ul li > ul li:hover { z-index: 4; display: block;}
+		.home-top-cats ul li > ul:hover { z-index: 4; }
+		.home-top-cats ul li > ul li a:hover { background-color:#fff; color: #f90;  }
 		
 	
-	.banner1 {float:left; width:648px; height:423px; z-index: -1; background-color:#eee; border:1px solid #ccc;}	
+	.banner1 {float:left; width:648px;  height:423px; background-color:#eee; border:1px solid #ccc;}	
 	.banner2 {float:left; width:348px; height:423px; background-color:#eee; border:1px solid #ccc;}
 	
-	.home-top-items {float:left; margin: 20px 0;}
-		.ht-item {float:left; width:230px; height:270px; padding:2px 4px; margin-right:20px; overflow:hidden; background-color:#eee;}	
+	.home-top-items {float:left; margin: 0px 0;}
+		.ht-item {float:left; width:230px; height:270px; padding:2px 4px; margin-right:0px; overflow:hidden; background-color:#eee;}	
 		.ht-item-last {float:left; width:230px; height:270px; background-color:#eee;}	
 		
 	
