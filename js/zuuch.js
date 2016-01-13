@@ -6,6 +6,7 @@ var slider_width = 0;
 var image_width;
 var current = 0;
 
+
 function init(){	
 	ul = document.getElementById('tb1-slider');
 	li_items = ul.children;
@@ -24,26 +25,26 @@ function init(){
 	slider(ul);
 }
 
-function slider(){		
-		animate({
-			delay:17,
-			duration: 3000,
-			delta:function(p){return Math.max(0, -1 + 2 * p)},
-			step:function(delta){
-					ul.style.left = '-' + parseInt(current * image_width + delta * image_width) + 'px';
-				},
-			callback:function(){
-				current++;
-				if(current < li_number-1){
-					slider();
-				}
-				else{
-					var left = (li_number - 1) * image_width;					
-					setTimeout(function(){goBack(left)},2000); 				
-					setTimeout(slider, 4000);
-				}
+function slider(){
+	animate({
+		delay:17,
+		duration: 3000,
+		delta:function(p){return Math.max(0, -1 + 2 * p)},
+		step:function(delta){
+				ul.style.left = '-' + parseInt(current * image_width + delta * image_width) + 'px';
+			},
+		callback:function(){
+			current++;
+			if(current < li_number-1){
+				slider();
 			}
-		});
+			else{
+				var left = (li_number - 1) * image_width;					
+				setTimeout(function(){goBack(left)},2000); 				
+				setTimeout(slider, 4000);
+			}
+		}
+	});
 }
 function goBack(left_limits){
 	current = 0;	

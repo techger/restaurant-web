@@ -91,7 +91,7 @@
 	}
 	.sub-cats-items-row {
 		display: block;
-		float: initial;
+		float: none;
 	}
 
 /*-----Home content category css end-----*/
@@ -108,6 +108,9 @@
 		box-sizing:border-box;
 	}
 	#top-banner1-slider{
+		overflow: hidden;
+	}
+	#tb1-slider{
 		position: relative;
 		overflow: hidden;
 		height: 423px;
@@ -121,6 +124,7 @@
 		list-style: none;
 		left: 0;
 	}
+
 	.top-banner2 {
 		float:left; 
 		width:348px; 
@@ -128,7 +132,7 @@
 		background-color:#eee; 
 		border:1px solid #ccc;
 	}
-
+		
 /*--------------------------------------*/
 
 	.home-top-items {
