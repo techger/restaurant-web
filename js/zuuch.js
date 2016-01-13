@@ -6,58 +6,15 @@ var slider_width = 0;
 var image_width;
 var current = 0;
 
-function hello(){
-	alert("Hello world");
-}
-
-function createItem() {
-  var ul = document.createElement('ul');
-  ul.setAttribute('class', 'sub-items');
-
-  var t, tt;
-  autoItems = ['element', 'element1', 'element2', 'element3'];
-  apartmentItems = ['element', 'element1', 'element2', 'element3'];
-  clothesItems = ['element', 'element1', 'element2', 'element3'];
-
-  document.getElementsByClassName('autoItems')[0].appendChild(ul);
-  autoItems.forEach(createSubItems);
-
-  document.getElementsByClassName('apartmentItems')[0].appendChild(ul);
-  apartmentItems.forEach(createSubItems);
-
-  document.getElementsByClassName('clothesItems')[0].appendChild(ul);
-  clothesItems.forEach(createSubItems);
-
-  function createSubItems(element, index, arr) {
-    var li = document.createElement('li');
-    li.setAttribute('class', 'item');
-
-    ul.appendChild(li);
-
-    t = document.createTextNode(element);
-
-    li.innerHTML = li.innerHTML + element;
-  }
-}
-function removeItem(arg){
-	document.getElementsByClassName(arg)[0].remove();
-}
-
-function mouseOver(arg) {
-	document.getElementsByClassName(arg)[0].style.visibility ='hidden';
-}
-
-function mouseOut(arg) {
-	document.getElementsByClassName(arg)[0].style.visibility='visible';
-}
-
-
 function init(){	
-	createItem();
 	ul = document.getElementById('image_slider');
 	li_items = ul.children;
 	li_number = li_items.length;
 	for (i = 0; i < li_number; i++){
+		// nodeType == 1 means the node is an element.
+		// in this way it's a cross-browser way.
+		//if (li_items[i].nodeType == 1){
+			//clietWidth and width???
 			image_width = li_items[i].childNodes[0].clientWidth;
 			slider_width += image_width;
 			image_number++;
