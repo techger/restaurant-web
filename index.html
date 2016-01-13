@@ -7,77 +7,58 @@
 			</div>
 			<ul class="ht-cats-list" ng-controller="con">
 				<li ng-class="{red:hover}" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
-					<a href="/#авто-мото"><span class="auto">Авто&Мото</span></a>
+					<a href="/#авто-мото"><span class="auto" onmouseover="mouseOver('banner1');createItem();" onmouseout="mouseOut('banner1');removeItem('autoItems');">Авто&Мото</span></a>
 					<ul>
-					<td>
-						<ul class = "sub-items"> 
-						<div class="sub-cats-title">
-							<span>Ангилал гарчиг</span>
-						</div>
-							<li><a href="#">item</a></li>
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-							<li><a href="#">item</a></li> 
-						</ul>
-					</td>
-					</ul>
-				</li>
-				<li><span class="apartment"><a href="javascript:void(0)">Амьдрах сууц</a></span>
-					<ul>
-						<tr>
-							<td>
-								<ul class = "sub-items"> 
-									<div class="sub-cats-title">
-										<span>Ангилал гарчиг</span>
-									</div>
-									<li><a href="#">item</a></li>
-									<li><a href="#">item</a></li> 
-									<li><a href="#">item</a></li> 
-									<li><a href="#">item</a></li> 
-								</ul>
-							</td>
-							<td>
-								<ul class = "sub-items"> 
-									<div class="sub-cats-title">
-										<span>Ангилал гарчиг</span>
-									</div>
-									<li><a href="#">item</a></li>
-									<li><a href="#">item</a></li> 
-									<li><a href="#">item</a></li> 
-									<li><a href="#">item</a></li> 
-								</ul>
-							</td>
-							<td>
-								<ul class = "sub-items"> 
+						<td>
+							<div class="autoItems">
 								<div class="sub-cats-title">
 									<span>Ангилал гарчиг</span>
 								</div>
-									<li><a href="#">item</a></li>
-									<li><a href="#">item</a></li> 
-									<li><a href="#">item</a></li> 
-									<li><a href="#">item</a></li> 
-								</ul>
+							</div>
+						</td>
+					</ul>
+				</li> 
+				<li><span class="apartment" onmouseover="mouseOver('banner1');createItem();" onmouseout="mouseOut('banner1');removeItem('apartmentItems');" ><a href="javascript:void(0)">Амьдрах сууц</a></span>
+					<ul>
+						<tr>
+							<td>
+								<div class="apartmentItems">
+									<div class="sub-cats-title">
+										<span>Ангилал гарчиг</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="apartmentItems">
+									<div class="sub-cats-title">
+										<span>Ангилал гарчиг</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="apartmentItems">
+									<div class="sub-cats-title">
+										<span>Ангилал гарчиг</span>
+									</div>
+								</div>							
 							</td>
 						</tr>
 				</ul>
 				</li>
-				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a>
+				<li><a href="javascript:void(0)"><span class="clothes" onmouseover="mouseOver('banner1');createItem();" onmouseout="mouseOut('banner1');removeItem();" >Хувцас</span></a>
 				
 
 				</li>	
 				<li ng-class="{red:hover}" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
-					<a href="javascript:void(0)"><span class="auto">Авто&Мото</span></a>			
+					<a href="javascript:void(0)"><span class="auto" onmouseover="mouseOver('banner1');createItem();" onmouseout="mouseOut('banner1');removeItem();" >Авто&Мото</span></a>			
 				</li>
-				<li><a href="javascript:void(0)"><span class="apartment">Амьдрах сууц</span></a></li>
-				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a></li>
+				<li><a href="javascript:void(0)"><span class="apartment" onmouseover="mouseOver('banner1');createItem();" onmouseout="mouseOut('banner1');removeItem();" >Амьдрах сууц</span></a></li>
+				<li><a href="javascript:void(0)"><span class="clothes" onmouseover="mouseOver('banner1');" onmouseout="mouseOut('banner1');" >Хувцас</span></a></li>
 				<li ng-class="{red:hover}" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
-					<a href="javascript:void(0)"><span class="auto">Авто&Мото</span></a>			
+					<a href="javascript:void(0)"><span class="auto" onmouseover="mouseOver('banner1');" onmouseout="mouseOut('banner1');" >Авто&Мото</span></a>			
 				</li>
-				<li><a href="javascript:void(0)"><span class="apartment">Амьдрах сууц</span></a></li>
-				<li><a href="javascript:void(0)"><span class="clothes">Хувцас</span></a></li>
-				<div id="createSubItem"></div>
+				<li><a href="javascript:void(0)"><span class="apartment" onmouseover="mouseOver('banner1');" onmouseout="mouseOut('banner1');" >Амьдрах сууц</span></a></li>
+				<li><a href="javascript:void(0)"><span class="clothes" onmouseover="mouseOver('banner1');" onmouseout="mouseOut('banner1');" >Хувцас</span></a></li>
 			</ul>
 		</div>
 		<div class="banner1">
@@ -161,7 +142,7 @@
 			width: auto;
 			height: auto;
 		}
-		.home-top-cats ul li ul ul{ 
+		.home-top-cats ul li ul div ul{ 
 			padding:0px 0px 0px 0px; display:block; background-color: #fff; text-decoration:none; 
 		} 
 		.home-top-cats ul li a:hover { 
@@ -186,7 +167,7 @@
 			top: 0; 
 			left: -2000px; 
 			height: auto; 
-			border: 1px solid #eee;
+			border: 1px sol	id #eee;
 
 		} 
 		.home-top-cats ul li > ul li:hover { z-index: 4; display: block;}
@@ -197,11 +178,10 @@
 	.banner1 {float:left; width:648px;  height:423px; background-color:#eee; border:1px solid #ccc;}	
 	.banner2 {float:left; width:348px; height:423px; background-color:#eee; border:1px solid #ccc;}
 	
-	.home-top-items {float:left; margin: 0px 0;}
-		.ht-item {float:left; width:230px; height:270px; padding:2px 4px; margin-right:0px; overflow:hidden; background-color:#eee;}	
+	.home-top-items {float:left; margin: 20px 0;}
+		.ht-item {float:left; width:230px; height:270px; padding:2px 4px; margin-right:20px; overflow:hidden; background-color:#eee;}	
 		.ht-item-last {float:left; width:230px; height:270px; background-color:#eee;}	
 		
-	
 
 </style>
 <script type="text/javascript" src="./js/zuuch.js"></script>

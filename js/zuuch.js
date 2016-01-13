@@ -10,19 +10,23 @@ function hello(){
 	alert("Hello world");
 }
 
-function createUl() {
+function createItem() {
   var ul = document.createElement('ul');
-  ul.setAttribute('id', 'sub-items');
+  ul.setAttribute('class', 'sub-items');
 
   var t, tt;
-  subItems = ['element', 'element1', 'element2', 'element3'];
-  subItems2 = ['element', 'element1', 'element2', 'element3'];
+  autoItems = ['element', 'element1', 'element2', 'element3'];
+  apartmentItems = ['element', 'element1', 'element2', 'element3'];
+  clothesItems = ['element', 'element1', 'element2', 'element3'];
 
-  document.getElementById('createSubItem').appendChild(ul);
-  subItems.forEach(createSubItems);
+  document.getElementsByClassName('autoItems')[0].appendChild(ul);
+  autoItems.forEach(createSubItems);
 
-  document.getElementById('createSubItem').appendChild(ul);
-  subItems2.forEach(createSubItems);
+  document.getElementsByClassName('apartmentItems')[0].appendChild(ul);
+  apartmentItems.forEach(createSubItems);
+
+  document.getElementsByClassName('clothesItems')[0].appendChild(ul);
+  clothesItems.forEach(createSubItems);
 
   function createSubItems(element, index, arr) {
     var li = document.createElement('li');
@@ -35,19 +39,25 @@ function createUl() {
     li.innerHTML = li.innerHTML + element;
   }
 }
-createUl();
+function removeItem(arg){
+	document.getElementsByClassName(arg)[0].remove();
+}
 
+function mouseOver(arg) {
+	document.getElementsByClassName(arg)[0].style.visibility ='hidden';
+}
+
+function mouseOut(arg) {
+	document.getElementsByClassName(arg)[0].style.visibility='visible';
+}
 
 
 function init(){	
+	createItem();
 	ul = document.getElementById('image_slider');
 	li_items = ul.children;
 	li_number = li_items.length;
 	for (i = 0; i < li_number; i++){
-		// nodeType == 1 means the node is an element.
-		// in this way it's a cross-browser way.
-		//if (li_items[i].nodeType == 1){
-			//clietWidth and width???
 			image_width = li_items[i].childNodes[0].clientWidth;
 			slider_width += image_width;
 			image_number++;
