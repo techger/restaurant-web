@@ -7,7 +7,7 @@ var image_width;
 var current = 0;
 
 function init(){	
-	ul = document.getElementById('image_slider');
+	ul = document.getElementById('tb1-slider');
 	li_items = ul.children;
 	li_number = li_items.length;
 	for (i = 0; i < li_number; i++){
