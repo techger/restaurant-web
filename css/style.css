@@ -7,24 +7,35 @@ body div {
 	left: 0px;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	/*border: 1px solid gray;*/
+	border: 1px solid gray;
 	right: 0px;
 }
+/*img{
+	width: 100%;
+	height: 100%;
+}*/
 *{
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 }
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,.col-sm-7, .navbar { 
+img, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .navbar, .nav { 
 	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
  }
+.navigation-list{
+	height: 425px;
+	overflow: scroll;
+}
+.top-banner1{
+	height: 425px;
+}
 .category-title{
-	height: 40%;
+	margin-left: 0px;
 }
 .row{
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 }
-
 .panel-default{
 	width: 100%; 
 	height: 100%;
@@ -38,11 +49,61 @@ body div {
 	margin: 0px 0px 0px 0px;
 }
 .top-items {
-	margin: 0px 0px 0px 0px;
+	margin: 45px 0px 0px 0px;
+}
+.top-item{
+	margin-left: 20px;
 }
 .home-content{
-	margin: 30px 0px 0px 0px;
+	margin: 120px 0px 0px 0px;
+	height: 545px;
 }
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+.home-banner{
+	height: 545px;
+}
+#captioned-gallery { 
+  width: 100%;
+  height: 545px;
+  overflow: hidden; 
+}
+.slider { 
+  position: relative; 
+  width: 500%;
+  height: 1000%;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+.slider img { 
+	width: 100%;
+	height: auto; 
+}
+.slider figure figcaption { 
+  position: absolute; 
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; 
+  width: 100%;
+  font-size: 2rem; 
+  padding: .6rem; 
+}
+
+
 .bottom-content{
-	margin: 30px 0px 0px 0px;
+	margin: 120px 0px 0px 0px;
 }
