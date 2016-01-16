@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -165,8 +166,16 @@
 	
 	
 =======
+=======
+*{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+>>>>>>> dee8b654451a619cbf7b649cf96d804487f061ed
 body{
 	margin: 0px 0px 0px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 body div {
 	top: 0px;
@@ -174,43 +183,205 @@ body div {
 	left: 0px;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	/*border: 1px solid gray;*/
 	right: 0px;
 }
-*{
-	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
-}
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,.col-sm-7, .navbar { 
-	padding: 0px 0px 0px 0px;
- }
-.category-title{
-	height: 40%;
-}
-.row{
-	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
+img{
+	width: 100%;
+	height: 100%;
 }
 
-.panel-default{
-	width: 100%; 
-	height: 100%;
+img, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .navbar, .nav { 
+	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
+ }
+::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
-.panel-body{
-	border: none;
-	padding: 10px 10px 10px 10px; 
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
 }
-.top-content {
-	margin: 0px 0px 0px 0px;
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
 }
-.top-items {
-	margin: 0px 0px 0px 0px;
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
 }
-.home-content{
-	margin: 30px 0px 0px 0px;
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
 }
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+<<<<<<< HEAD
 .bottom-content{
 	margin: 30px 0px 0px 0px;
 }
 >>>>>>> 8d8d84197d4a83d5765627aed8e940d8aa34c51d
+=======
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.z_cats_title{
+		margin-left: 0px;
+	}
+	.z_top_cats_list ::-webkit-scrollbar {
+		text-decoration: none;
+		overflow-y: scroll;
+		overflow-x:hidden; 
+	}
+	.z_top_content {
+		margin: 0px 0px 0px 0px;
+	}
+	.z_top_banner1{
+	}
+	.z_top_banner2{ 
+	}
+	.z_top_items {
+		margin: 45px 0px 0px 0px;
+	}
+	.z_top_item{
+		margin-right:20px; 
+	}
+	.z_home_content{
+		margin: 120px 0px 0px 0px;
+	}
+	.z_home_cats_list{
+		
+	}
+	.z_hcl_title{
+
+	}
+	.z_hcl_items{
+		height: 400px;
+		overflow: scroll;
+	}
+	.z_home_banner{
+	}
+	.z_home_items{
+	}
+	.z_home_item{=
+	}
+	.z_bottom_content{
+		margin: 120px 0px 0px 0px;
+	}
+	.z_bottom_cats_list{
+		
+	}
+	
+	.z_bcl_title{
+
+	}
+	.z_bottom_banner{
+	}
+	.z_bottom_items{
+	}
+	.z_bottom_item{ 
+	}
+
+
+
+@media(min-width: 1275px) and (max-width: 1440px){
+	.z_cats_title{
+		margin-left: 0px;
+	}
+	.z_top_cats_list{
+		width: 260px;
+		height: 425px;
+		text-decoration: none;
+		overflow: scroll;
+	}
+	.z_top_content {
+		margin: 0px 0px 0px 0px;
+	}
+	.z_top_banner1{
+		width: 650px;
+		height: 425px;
+	}
+	.z_top_banner2{
+		width:350px; 
+		height:425px; 
+	}
+	.z_top_items {
+		margin: 45px 0px 0px 0px;
+	}
+	.z_top_item{
+		width:235px; 
+		height:280px; 
+		margin-right:20px; 
+	}
+	.z_home_content{
+		margin: 120px 0px 0px 0px;
+		width:100%; 
+		height:545px; 
+	}
+	.z_home_cats_list{
+		height: 545px; 
+		width: 260px;
+	}
+	.z_hcl_title{
+
+	}
+	.z_home_banner{
+		width: 400px; 
+		height: 544px;
+	}
+	.z_home_items{
+		width:600px;
+	}
+	.z_home_item{
+		width:200px; 
+		height:270px; 
+	}
+	.z_bottom_content{
+		margin: 120px 0px 0px 0px;
+		width:100%; 
+		height:545px; 
+	}
+	.z_bottom_cats_list{
+		height: 545px; 
+		width: 260px;
+	}
+	.z_bcl_title{
+
+	}
+	.z_bottom_banner{
+		width: 400px; 
+		height: 544px;
+	}
+	.z_bottom_items{
+		width: 600px;
+	}
+	.z_bottom_item{
+		width:200px; 
+		height:270px; 
+	}
+
+}
+@media(min-width: 1000px) and (max-width: 1199px){
+
+}
+@media(min-width: 765px) and (max-width: 999px){
+
+}
+@media(min-width: 600px) and (max-width: 799px){
+
+}
+@media(max-width: 599px){
+
+}
+>>>>>>> dee8b654451a619cbf7b649cf96d804487f061ed
