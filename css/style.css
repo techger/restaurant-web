@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -163,3 +164,53 @@
 
 	
 	
+=======
+body{
+	margin: 0px 0px 0px 0px;
+}
+body div {
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	/*border: 1px solid gray;*/
+	right: 0px;
+}
+*{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,.col-sm-7, .navbar { 
+	padding: 0px 0px 0px 0px;
+ }
+.category-title{
+	height: 40%;
+}
+.row{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.panel-default{
+	width: 100%; 
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+}
+.panel-body{
+	border: none;
+	padding: 10px 10px 10px 10px; 
+}
+.top-content {
+	margin: 0px 0px 0px 0px;
+}
+.top-items {
+	margin: 0px 0px 0px 0px;
+}
+.home-content{
+	margin: 30px 0px 0px 0px;
+}
+.bottom-content{
+	margin: 30px 0px 0px 0px;
+}
+>>>>>>> 8d8d84197d4a83d5765627aed8e940d8aa34c51d

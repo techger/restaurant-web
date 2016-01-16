@@ -8,7 +8,11 @@ var current = 0;
 
 
 function init(){	
+<<<<<<< HEAD
 	ul = document.getElementById('tb1-slider');
+=======
+	ul = document.getElementById('top-slider');
+>>>>>>> 8d8d84197d4a83d5765627aed8e940d8aa34c51d
 	li_items = ul.children;
 	li_number = li_items.length;
 	for (i = 0; i < li_number; i++){
