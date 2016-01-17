@@ -60,6 +60,7 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
 .col-sm-2 {
 	width: 20%;
 }
@@ -75,7 +76,10 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 .col-sm-7 {
 	width: 52%;
 }
-
+.z_home {
+	height: 100%;
+	width: 100%;
+}
 .z_main_menu {
 	height: 50px;
 }
@@ -92,7 +96,7 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 	.z_order_manage {
 
 	}
-.z_cats_nav{
+.z_cats_nav {
 	height: 50px;
 }
 	.z_cats_title{
@@ -163,8 +167,8 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 	.z_bottom_item{
 		width: 33.3%; 
 	}
-/*
-@media(min-width: 1275px) and (max-width: 1440px){
+
+@media(min-width: 1275px) and (max-width: 1800px){
 	.z_cats_title{
 		margin-left: 0px;
 	}
@@ -240,7 +244,7 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 		height:270px; 
 	}
 
-}*/
+}
 @media(min-width: 1000px) and (max-width: 1199px){
 
 }
