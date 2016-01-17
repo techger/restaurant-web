@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-	font-size: 12px;
+	font-size: 13px;
 	margin: 0px 0px 0px 0px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -80,9 +80,27 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 	height: 100%;
 	width: 100%;
 }
+.z_list_icon {
+	background: url(../images/z_list_icon.png) no-repeat right center;
+}
+.z_down_icon {
+	background: url(../images/z_down_icon.png) no-repeat right center;
+}
 .z_main_menu {
 	height: 50px;
 }
+	.z_on_sale {
+		background: url(../images/z_on_sale.png) no-repeat left center;
+	}
+	.z_village {
+		background: url(../images/z_village.png) no-repeat left center;
+	}
+	.z_singup {
+		background: url(../images/z_signup.png) no-repeat left center;
+	}
+	.z_login {
+		background: url(../images/z_login.png) no-repeat left center;
+	}
 .z_main_search {
 	height: 55px;
 }
@@ -168,7 +186,7 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 		width: 33.3%; 
 	}
 
-@media(min-width: 1275px) and (max-width: 1800px){
+@media(min-width: 1275px) and (max-width: 1440px){
 	.z_cats_title{
 		margin-left: 0px;
 	}
