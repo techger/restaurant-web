@@ -1,177 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
 }
-
-
-
-
-.home-top {
-	float:left;
-}
-
-/*-----Home content categore css start-----*/
-
-.home-top-cats {
- 	float:left; 
- }
-	.ht-cats-title {
-		padding:4px 10px; 
-	}
-	.ht-cats-title span {
-		font-size: 90%; 
-		font-weight: bold;
-	}
-	.ht-cats-list {
-		background-color: transparent;
-		background-image: url("../images/category-list.png"); 
-		width: 260px; 
-		height: 425px;
-		float:left;  
-	}
-	
-	.ht-cats-list{ 
-		list-style-type: none;  
-		text-decoration: none;
-	} 
-	.ht-cats-list li a { 
-		padding:10px 10px 10px 50px; 
-		display:block; 
-		text-decoration:none; 
-	} 
-	.ht-cats-list li ul {
-		padding: 0px 0px 0px 0px;
-		width: auto;
-		height: auto;
-	}
-	.sub-cats-items { 
-		padding:0px 0px 0px 0px; 
-		display:block; 
-		background-color: #fff; 
-		text-decoration:none; 
-		list-style-type: none;
-	} 
-	.ht-cats-list li a:hover { 
-		color: #f90; 
-		border-top: 1px solid #eee; 
-		border-bottom:1px solid #eee;
-	}
-	.ht-cats-list li:hover > ul { 
-		left: 260px;
-		top: 0px; 
-		float: left;
-		position: fixed;
-		z-index: 2;
-		-moz-transition: border-color 0.5s ease-in-out;
-		-webkit-transition: border-color 0.5s ease-in-out;
-		-ms-transition: border-color 0.5s ease-in-out;
-		transition: border-color 0.5s ease-in-out;
-	} 
-	.ht-cats-list li > ul { 
-		position: absolute; 
-		background-color: #fff; 
-		min-width: auto;
-		top: 0; 
-		left: -2000px; 
-		height: auto; 
-	} 
-	.ht-cats-list {
-
-	}
-	.ht-cats-list li > ul li a:hover { 
-		background-color:#fff; 
-		color: #f90;  
-	}
-	.sub-cats-items { 
-		float: left; 
-	}
-	.sub-cats-title { 
-		padding:4px 10px; 
-		background-color: #f2f2f2; 
-		border-bottom: 1px solid #e9e9e9;
-	}
-	.sub-cats-title span {
-		color: #333; 
-		font-size: 80%; 
-		font-weight: bold;
-	}
-	.sub-cats-items-row {
-		display: block;
-		float: none;
-	}
-
-/*-----Home content category css end-----*/
-		
-	.top-banner1 {
-		float:left;
-		width:650px;  
-		height:425px; ]
-		padding: 0px 0px 0px 0px;
-		-webkit-box-sizing:border-box;
-		-moz-box-sizing:border-box;
-		box-sizing:border-box;
-	}
-	#top-banner1-slider{
-		overflow: hidden;
-	}
-	#tb1-slider{
-		position: relative;
-		overflow: hidden;
-		height: 425px;
-		padding:0;
-		left:0;
-	}
-	#tb1-slider li{
-		position:relative;
-		max-width: 100%;
-		float:left;
-		list-style: none;
-		left: 0;
-	}
-
-	.top-banner2 {
-		float:left; 
-		width:350px; 
-		height:425px; 
-	}
-	.auto{
-		background:url(D:b.tortuvshin/ZuuchDesing/images/card3.png) no-repeat left center; 
-	}
-/*--------------------------------------*/
-
-	.home-top-items {
-		float:left; 
-		margin: 20px 0;
-	}
-		.ht-item {
-			float:left; 
-			width:235px; 
-			height:275px; 
-			margin-right:20px; 
-			overflow:hidden; 
-			background-color:#eee;
-		}	
-		.ht-item-last {
-			float:left; 
-			width:230px; 
-			height:270px; 
-			background-color:#eee;
-		}	
-		
-	
-/* -------------------------------------*/
-
-	
-	
-=======
-=======
-*{
-	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
-}
->>>>>>> dee8b654451a619cbf7b649cf96d804487f061ed
 body{
 	margin: 0px 0px 0px 0px;
     overflow-y: scroll;
@@ -226,16 +56,12 @@ img, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .co
 ::-webkit-scrollbar-track:active {
   background: #333333;
 }
-<<<<<<< HEAD
-.bottom-content{
-	margin: 30px 0px 0px 0px;
-}
->>>>>>> 8d8d84197d4a83d5765627aed8e940d8aa34c51d
-=======
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-
+.z_cats_nav{
+	
+}
 .z_cats_title{
 		margin-left: 0px;
 	}
@@ -281,8 +107,7 @@ img, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .co
 	}
 	.z_bottom_cats_list{
 		
-	}
-	
+	}	
 	.z_bcl_title{
 
 	}
@@ -292,8 +117,6 @@ img, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .co
 	}
 	.z_bottom_item{ 
 	}
-
-
 
 @media(min-width: 1275px) and (max-width: 1440px){
 	.z_cats_title{
@@ -384,4 +207,3 @@ img, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .co
 @media(max-width: 599px){
 
 }
->>>>>>> dee8b654451a619cbf7b649cf96d804487f061ed
