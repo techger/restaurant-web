@@ -21,50 +21,48 @@
 
 	<div class="row z_main_menu">
 		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				       <span class="sr-only">Үндсэн цэс</span>
-				       <span class="icon-bar"></span>
-				       <span class="icon-bar"></span>
-				       <span class="icon-bar"></span>
-				    </button>
-			    </div>
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-				          <i class="fa fa-th-large">Зарагдаж буй</i>
-				          <span class="fa fa-angle-down"></span>
-			          </a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			      <ul class="nav navbar-nav">
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			          	<i class="fa fa-map-marker">Бүх суурин</i>
-			          	<span class="fa fa-angle-down"></span>
-			          	</a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			      <ul class="nav navbar-nav">
-			      	<li><a href="#">Тусламж</a></li>
-			      	<li><a href="#">Холбоо барих</a></li>
-			      	<li><a href="#">Санал хүсэлт</a></li>
-			      </ul>
-			      <ul class="nav navbar-nav navbar-right">
-			      	<li><a href="#"><i class="fa fa-user-plus">Бүртгүүлэх</i></a></li>
-			      	<li><a href="#"><i class="fa fa-key">Нэвтрэх</i></a></li>
-			      	<li><a href="#"><i class="fa fa-bell"></i></a></li>
-			      	<li><a>2016-01-14</a></li>
-			      </ul>
-			    </div>
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			       <span class="sr-only">Үндсэн цэс</span>
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span>
+			    </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			          <p class="fa fa-th-large">Зарагдаж буй</p>
+			          <span class="fa fa-angle-down"></span>
+		          </a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		          	<p class="fa fa-map-marker">Бүх суурин</p>
+		          	<span class="fa fa-angle-down"></span>
+		          	</a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav">
+		      	<li><a href="#">Тусламж</a></li>
+		      	<li><a href="#">Холбоо барих</a></li>
+		      	<li><a href="#">Санал хүсэлт</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="#">Бүртгүүлэх</a></li>
+		      	<li><a href="#">Нэвтрэх</a></li>
+		      	<li><a href="#"></a></li>
+		      	<li><a>2016-01-14</a></li>
+		      </ul>
 		    </div>
 		</nav>
 	</div>
@@ -72,27 +70,23 @@
     <!-- main search -->
 
 	<div class="row z_main_search">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 col-sm-2 logo">
-					<a href="index.html">
-						<img src="image/logo.jpg"/>
-					</a>
-				</div>
-				<div class="col-xs-12 col-sm-7 search-form">
-					<form action="" method="post">
-						<i class="fa fa-search asd"></i>
-	          			<input type="text" placeholder="Хайх утга аа оруулна уу">
-	          			<button type="submit" onclick=""><i class="fa fa-arrow-right"></i></button>
-	      			</form>
-				</div>
-				<div class="col-xs-12 col-sm-3 control">
-					<form action="" method="">
-						<button type="submit"><i class="fa fa-plus">Бараа нэмэх</i></button>
-						<button type="submit"><i class="fa fa-magnet">Бараа чагнах</i></button>
-					</form>
-				</div>
-			</div>
+		<div class="col-xs-12 col-sm-2 z_logo">
+			<a href="index.html">
+				<img src="images/z_logo.png"/>
+			</a>
+		</div>
+		<div class="col-xs-12 col-sm-7 z_search_form">
+			<form action="" method="post">
+				<p class="fa fa-search asd"></p>
+      			<input type="text" placeholder="Хайх утга аа оруулна уу">
+      			<button type="submit" onclick=""><p class="fa fa-arrow-right"></p></button>
+  			</form>
+		</div>
+		<div class="col-xs-12 col-sm-3 z_order_manage">
+			<form action="" method="">
+				<button type="submit"><a class="fa fa-plus">Бараа нэмэх</a></button>
+				<button type="submit"><a class="fa fa-magnet">Бараа чагнах</a></button>
+			</form>
 		</div>
 	</div>
 
@@ -101,19 +95,17 @@
     <div class="row z_cats_nav">
       <div class="col-sm-12">
         <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header col-sm-2">
-              <a class="navbar-brand z_cats_title" href="#">Категори</a>
-              <ul class="nav navbar-nav"> 
-                <li><a href="#">бүгдийг үзэх</a></li>
-              </ul>
-            </div>
-            <ul class="nav navbar-nav">
-              <li><a href="#">Хамгийн их үзсэн</a></li> 
-              <li><a href="#">Онцлох бараа</a></li> 
-              <li><a href="#">Дэлгүүрүүд</a></li> 
-            </ul>
-          </div>
+	        <div class="navbar-header col-sm-2">
+	          <a class="navbar-brand z_cats_title" href="#">&nbsp;&nbsp;&nbsp;&nbsp;КАТЕГОРИ</a>
+	          <ul class="nav navbar-nav"> 
+	            <li><a href="#"><i>бүгдийг үзэх</i></a></li>
+	          </ul>
+	        </div>
+	        <ul class="nav navbar-nav">
+	          <li><a href="#">Хамгийн их үзсэн</a></li> 
+	          <li><a href="#">Онцлох бараа</a></li> 
+	          <li><a href="#">Дэлгүүрүүд</a></li> 
+	        </ul>
         </nav>
       </div>
     </div>
