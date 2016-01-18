@@ -37,7 +37,7 @@
 				          <span class="z_down_icon"></span>
 			          </a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Sub</a></li>
 			          </ul>
 			        </li>
 			      </ul>
@@ -49,7 +49,7 @@
 			          	</a>
 			          	<span class="z_down_icon"></span>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Action</a></li>
+			            <li><a href="#">SUb</a></li>
 			          </ul>
 			        </li>
 			      </ul>
@@ -61,8 +61,8 @@
 			      <ul class="nav navbar-nav navbar-right">
 			      	<li><a class="z_singup" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бүртгүүлэх</a></li>
 			      	<li><a class="z_login" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нэвтрэх</a></li>
-			      	<li><a href="#"></a></li>
-			      	<li><a>2016-01-14</a></li>
+			      	<li><a class="z_notify" href="#">&nbsp;</a></li>
+			      	<li><a class="z_time">Jan, 18-2016</a></li>
 			      </ul>
 			    </div>
 			</nav>
@@ -77,12 +77,23 @@
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-7 z_search_form">
-				<form action="" method="post">
-					<p class="fa fa-search asd"></p>
-	      			<input type="text" placeholder="Хайх утга аа оруулна уу">
-	      			<button type="submit" onclick=""><p class="fa fa-arrow-right"></p></button>
-	  			</form>
+  			<div class="input-group">
+          <span class="input-group-addon z_sf_icon">&nbsp;&nbsp;</span>
+          <input type="text" class="form-control" aria-label="...">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle z_search_cats" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>&nbsp;Ангилалаас</button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Ангилал</a></li>
+                <li><a href="#"Ангилал</a></li>
+                <li><a href="#">Ангилал</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Ангилал</a></li>
+              </ul>
+          </div><!-- /btn-group -->
+            <span class="input-group-addon z_sf_submit">&nbsp;&nbsp;</span>
+          </div><!-- /input-group -->
 			</div>
+
 			<div class="col-xs-12 col-sm-3 z_order_manage">
 				<form action="" method="">
 					<button type="submit"><a class="fa fa-plus">Бараа нэмэх</a></button>
@@ -99,7 +110,7 @@
 		        <div class="navbar-header col-sm-2">
 		          <a class="navbar-brand z_cats_title" href="#">&nbsp;&nbsp;&nbsp;&nbsp;КАТЕГОРИ</a>
 		          <ul class="nav navbar-nav"> 
-		            <li><a href="#"><i>бүгдийг үзэх</i></a></li>
+		            <li><a class="z_cats_more" href="#"><i>бүгдийг үзэх</i></a></li>
 		          </ul>
 		        </div>
 		        <ul class="nav navbar-nav">
@@ -114,27 +125,50 @@
 	    <!-- home top content -->
 
 	    <div class="row z_top_content">
-	      <div class="col-sm-2 z_top_cats_list">
-	        <ul class="list-group" >
-	          <li class="list-group-item z_list_icon">Амьдрах сууц</li>
-	          <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	          <li class="list-group-item z_list_icon">Албан байр</li>
-	          <li class="list-group-item z_list_icon">Дан газар</li>
-	          <li class="list-group-item z_list_icon">Бусад</li>
-	          <li class="list-group-item z_list_icon">Авто Мото</li>
-	          <li class="list-group-item z_list_icon">Амьдрах сууц</li>
-	          <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	          <li class="list-group-item z_list_icon">Албан байр</li>
-	          <li class="list-group-item z_list_icon">Дан газар</li>
-	          <li class="list-group-item z_list_icon">Бусад</li>
-	          <li class="list-group-item z_list_icon">Авто Мото</li>
-	          <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	          <li class="list-group-item z_list_icon">Албан байр</li>
-	          <li class="list-group-item z_list_icon">Дан газар</li>
-	          <li class="list-group-item z_list_icon">Бусад</li>
-	          <li class="list-group-item z_list_icon">Авто Мото</li>
+	      <div class="col-sm-2 z_top_cats">
+	        <ul class="list-group z_top_cats_list" >
+	          <li class="list-group-item z_list_items"><a>Амьдрах сууц</a></li>
+              <!-- <ul class = "z_sub_cat_items"> 
+               <div class="sub-cats-title">
+                 <span>Англилал гарчиг</span>
+               </div>
+               <li><a href="#">item</a></li>
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+              </ul>
+              <ul class = "z_sub_cat_items"> 
+               <div class="sub-cats-title">
+                 <span>Англилал гарчиг</span>
+               </div>
+               <li><a href="#">item</a></li>
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+               <li><a href="#">item</a></li> 
+              </ul> -->
+	          <li class="list-group-item z_list_items">Хувцас хэрэглэл</li>
+	          <li class="list-group-item z_list_items">Албан байр</li>
+	          <li class="list-group-item z_list_items">Дан газар</li>
+	          <li class="list-group-item z_list_items">Бусад</li>
+	          <li class="list-group-item z_list_items">Авто Мото</li>
+	          <li class="list-group-item z_list_items">Амьдрах сууц</li>
+	          <li class="list-group-item z_list_items">Хувцас хэрэглэл</li>
+	          <li class="list-group-item z_list_items">Албан байр</li>
+	          <li class="list-group-item z_list_items">Дан газар</li>
+	          <li class="list-group-item z_list_items">Бусад</li>
 	        </ul>
-	      </div>
+
+          <div class="input-group">
+            <span class="input-group-addon z_sf_icon">&nbsp;&nbsp;</span>
+            <input type="text" class="form-control" aria-label="...">
+            <span class="input-group-addon z_sf_submit">&nbsp;&nbsp;</span>
+          </div>
+
+          </div>
 	      <div class="col-sm-7 z_top_banner1">
 	        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	          <!-- Indicators -->
@@ -194,33 +228,35 @@
 	      <div class="col-sm-2 z_home_cats_list">
 	       <div class="row">
 	          <div class="navbar-header z_hcl_title">
-	            <a class="navbar-brand " href="#">Категори</a>
+	            <a class="navbar-brand " href="#">АВТО & МОТО</a>
 	          </div>
 	        </div>
 	        <div class="row z_hcl_items">
 	          <div class="dasd">
 	            <ul class="row list-group">
-	              <li class="list-group-item z_list_icon"><a href="">Амьдрах сууц</a></li>
-	              <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	              <li class="list-group-item z_list_icon">Албан байр</li>
-	              <li class="list-group-item z_list_icon">Дан газар</li>
-	              <li class="list-group-item z_list_icon">Бусад</li>
-	              <li class="list-group-item z_list_icon">Авто Мото</li>
-	              <li class="list-group-item z_list_icon">Амьдрах сууц</li>
-	              <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	              <li class="list-group-item z_list_icon">Албан байр</li>
-	              <li class="list-group-item z_list_icon">Дан газар</li>
-	              <li class="list-group-item z_list_icon">Бусад</li>
-	              <li class="list-group-item z_list_icon">Авто Мото</li>
-	              <li class="list-group-item z_list_icon">Дан газар</li>
-	              <li class="list-group-item z_list_icon">Бусад</li>
-	              <li class="list-group-item z_list_icon">Авто Мото</li>
+	              <li class="list-group-item z_list_items"><a href="">Амьдрах сууц</a></li>
+	              <li class="list-group-item z_list_items">Хувцас хэрэглэл</li>
+	              <li class="list-group-item z_list_items">Албан байр</li>
+	              <li class="list-group-item z_list_items">Дан газар</li>
+	              <li class="list-group-item z_list_items">Бусад</li>
+	              <li class="list-group-item z_list_items">Авто Мото</li>
+	              <li class="list-group-item z_list_items">Амьдрах сууц</li>
+	              <li class="list-group-item z_list_items">Хувцас хэрэглэл</li>
+	              <li class="list-group-item z_list_items">Албан байр</li>
+	              <li class="list-group-item z_list_items">Дан газар</li>
+	              <li class="list-group-item z_list_items">Бусад</li>
+	              <li class="list-group-item z_list_items">Авто Мото</li>
 	            </ul>
 	          </div>
 	        </div>
+          <div class="input-group">
+            <span class="input-group-addon z_sf_icon">&nbsp;&nbsp;</span>
+            <input type="text" class="form-control" aria-label="...">
+            <span class="input-group-addon z_sf_submit">&nbsp;&nbsp;</span>
+          </div>
 	      </div>
 	      <div class="col-sm-4 z_home_banner">
-	        <img src="images/banner1.png" alt="Flower">
+	        <img src="images/hc-banner.png" alt="Flower">
 	      </div>
 	      <div class="col-sm-6 z_home_items">
 	        <div class="row ">
@@ -242,26 +278,27 @@
 	      <div class="col-sm-2 z_bottom_cats_list">
 	        <div class="row">
 	          <div class="navbar-header z_bcl_title">
-	            <a class="navbar-brand " href="#">Категори</a>
+	            <a class="navbar-brand " href="#">АМЬДРАХ СУУЦ</a>
 	          </div>
 	        </div>
 	        <div class="row">
 	          <ul class="row list-group">
-	            <li class="list-group-item z_list_icon">Амьдрах сууц</li>
-	            <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	            <li class="list-group-item z_list_icon">Албан байр</li>
-	            <li class="list-group-item z_list_icon">Дан газар</li>
-	            <li class="list-group-item z_list_icon">Бусад</li>
-	            <li class="list-group-item z_list_icon">Авто Мото</li>
-	            <li class="list-group-item z_list_icon">Амьдрах сууц</li>
-	            <li class="list-group-item z_list_icon">Хувцас хэрэглэл</li>
-	            <li class="list-group-item z_list_icon">Албан байр</li>
-	            <li class="list-group-item z_list_icon">Дан газар</li>
-	            <li class="list-group-item z_list_icon">Бусад</li>
-	            <li class="list-group-item z_list_icon">Авто Мото</li>
+	            <li class="list-group-item z_list_items">Амьдрах сууц</li>
+	            <li class="list-group-item z_list_items">Хувцас хэрэглэл</li>
+	            <li class="list-group-item z_list_items">Албан байр</li>
+	            <li class="list-group-item z_list_items">Дан газар</li>
+	            <li class="list-group-item z_list_items">Бусад</li>
+	            <li class="list-group-item z_list_items">Авто Мото</li>
+	            <li class="list-group-item z_list_items">Амьдрах сууц</li>
+	            <li class="list-group-item z_list_items">Хувцас хэрэглэл</li>
+	            <li class="list-group-item z_list_items">Албан байр</li>
+	            <li class="list-group-item z_list_items">Дан газар</li>
+	            <li class="list-group-item z_list_items">Бусад</li>
+	            <li class="list-group-item z_list_items">Авто Мото</li>
 	          </ul>
 	        </div>
 	      </div>
+        
 	      <div class="col-sm-4 z_bottom_banner">
 	        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	          <!-- Indicators -->
@@ -275,19 +312,19 @@
 	          <!-- Wrapper for slides -->
 	          <div class="carousel-inner" role="listbox">
 	            <div class="item active">
-	              <img src="images/banner1.png" alt="Chania">
+	              <img src="images/hc-banner.png" alt="Chania">
 	            </div>
 
 	            <div class="item">
-	              <img src="images/banner1.png" alt="Chania">
+	              <img src="images/hc-banner.png" alt="Chania">
 	            </div>
 
 	            <div class="item">
-	              <img src="images/banner1.png" alt="Flower">
+	              <img src="images/hc-banner.png" alt="Flower">
 	            </div>
 
 	            <div class="item">
-	              <img src="images/banner1.png" alt="Flower">
+	              <img src="images/hc-banner.png" alt="Flower">
 	            </div>
 	          </div>
 

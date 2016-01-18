@@ -5,8 +5,10 @@
 body{
 	font-size: 13px;
 	margin: 0px 0px 0px 0px;
+	background-color: transparent;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 1;
 }
 body div {
 	top: 0px;
@@ -80,7 +82,8 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 	height: 100%;
 	width: 100%;
 }
-.z_list_icon {
+.z_list_items {
+	border: 1px solid transparent;
 	background: url(../images/z_list_icon.png) no-repeat right center;
 }
 .z_down_icon {
@@ -100,6 +103,13 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 	}
 	.z_login {
 		background: url(../images/z_login.png) no-repeat left center;
+	}
+	.z_notify {
+		background: url(../images/z_notify.png) no-repeat left center;
+	}
+	.z_time {
+		font-size: 11px;
+		line-height: 0px;
 	}
 .z_main_search {
 	height: 55px;
@@ -121,11 +131,64 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 		margin-left: 0px;
 		background: url(../images/z_cats_head.png) no-repeat left center;
 	}
+	.z_cats_more {
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: underline;
+	}
 	.z_top_cats_list ::-webkit-scrollbar {
 		text-decoration: none;
 		overflow-y: scroll;
 		overflow-x:hidden; 
 	}
+	.z_nav_menu li a{
+		border-left: 1px dotted black;
+	}
+	.z_cats_search {
+		margin: 0px 0px 0px 20px;
+	}
+	.z_search_form {
+		border: none;
+		border-radius: 0;
+		margin-top: 10px;
+	}
+	.z_search_cats {
+		border-radius: 0;
+		border: none;
+	}
+	.z_cs_icon {
+		border: none;
+		border-radius: 0;
+		background: url(../images/z_cats_search.png) no-repeat;
+	}
+	.z_sf_icon {
+		border: none;
+		border-radius: 0;
+		background: url(../images/z_search.png) no-repeat;
+	}
+	.z_sf_submit {
+		border: none;
+		border-radius: 0;
+		background: url(../images/z_search_sub.png) no-repeat;
+	}
+	.z_main_search {
+		border-radius: 0;
+		background-color: #D9D9D9;
+	}
+
+	/*	.z_top_cats{
+			z-index: 1;
+		}
+		.z_sub_cat_items{
+			list-style-type: none;
+			float: left;
+			position: fixed;
+			padding: 10px;
+			background-color: red; 
+			top: 20%; 
+			left: 20%; 
+		}*/
+
 .z_top_content {
 	margin: 0px 0px 0px 0px;
 }
@@ -186,7 +249,7 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 		width: 33.3%; 
 	}
 
-@media(min-width: 1275px) and (max-width: 1440px){
+@media(min-width: 1440px) and (max-width: 1440px){
 	.z_cats_title{
 		margin-left: 0px;
 	}
