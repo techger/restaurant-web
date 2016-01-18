@@ -1,0 +1,6 @@
+@import "zuuchHome.scss"
+@import "demo.scss"
+.demo {
+  @include zuuchHome;
+  @include demo;
+}

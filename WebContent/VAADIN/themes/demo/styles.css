@@ -84,28 +84,28 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 }
 .z_list_items {
 	border: 1px solid transparent;
-	background: url(../images/z_list_icon.png) no-repeat right center;
+	background: url(images/z_list_icon.png) no-repeat right center;
 }
 .z_down_icon {
-	background: url(../images/z_down_icon.png) no-repeat right center;
+	background: url(images/z_down_icon.png) no-repeat right center;
 }
 .z_main_menu {
 	height: 50px;
 }
 	.z_on_sale {
-		background: url(../images/z_on_sale.png) no-repeat left center;
+		background: url(images/z_on_sale.png) no-repeat left center;
 	}
 	.z_village {
-		background: url(../images/z_village.png) no-repeat left center;
+		background: url(images/z_village.png) no-repeat left center;
 	}
 	.z_singup {
-		background: url(../images/z_signup.png) no-repeat left center;
+		background: url(images/z_signup.png) no-repeat left center;
 	}
 	.z_login {
-		background: url(../images/z_login.png) no-repeat left center;
+		background: url(images/z_login.png) no-repeat left center;
 	}
 	.z_notify {
-		background: url(../images/z_notify.png) no-repeat left center;
+		background: url(images/z_notify.png) no-repeat left center;
 	}
 	.z_time {
 		font-size: 11px;
@@ -129,7 +129,7 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 }
 	.z_cats_title{
 		margin-left: 0px;
-		background: url(../images/z_cats_head.png) no-repeat left center;
+		background: url(images/z_cats_head.png) no-repeat left center;
 	}
 	.z_cats_more {
 		font-size: 15px;
@@ -159,17 +159,17 @@ img, p, .row, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
 	.z_cs_icon {
 		border: none;
 		border-radius: 0;
-		background: url(../images/z_cats_search.png) no-repeat;
+		background: url(images/z_cats_search.png) no-repeat;
 	}
 	.z_sf_icon {
 		border: none;
 		border-radius: 0;
-		background: url(../images/z_search.png) no-repeat;
+		background: url(images/z_search.png) no-repeat;
 	}
 	.z_sf_submit {
 		border: none;
 		border-radius: 0;
-		background: url(../images/z_search_sub.png) no-repeat;
+		background: url(images/z_search_sub.png) no-repeat;
 	}
 	.z_main_search {
 		border-radius: 0;
