@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.noyonzuuch.zuuchfront;
 
 import com.vaadin.testbench.ScreenshotOnFailureRule;
 import com.vaadin.testbench.TestBenchTestCase;
@@ -24,7 +24,7 @@ import static org.junit.Assert.assertFalse;
  *
  * Once the license is installed, you can run this class as a JUnit test.
  */
-public class DemoTest extends TestBenchTestCase {
+public class ZuuchfrontTest extends TestBenchTestCase {
     @Rule
     public ScreenshotOnFailureRule screenshotOnFailureRule =
             new ScreenshotOnFailureRule(this, true);
@@ -53,7 +53,7 @@ public class DemoTest extends TestBenchTestCase {
      * Opens the URL where the application is deployed.
      */
     private void openTestUrl() {
-        getDriver().get("http://localhost:8080/Demo");
+        getDriver().get("http://localhost:8080/ZuuchFront");
     }
 
     @Test
