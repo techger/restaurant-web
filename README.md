@@ -1,2 +1,1 @@
-#Vaadin example
-Vaadin Declarative UI example
+#Java vaadin, spring, hibernate example
