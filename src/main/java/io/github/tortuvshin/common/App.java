@@ -1,5 +1,6 @@
 package io.github.tortuvshin.common;
 
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,7 +15,8 @@ public class App {
 		ApplicationContext applicationContext = 
 				new ClassPathXmlApplicationContext("spring/config/BeanLocations.xml");
 		
-		NatoriatBo = (NatoriatBo).appContext.getBean("natoriatBo");
+		BeanFactory appContext;
+		NatoriatBo = (NatoriatBo) appContext.getBean("natoriatBo");
 	}
 
 }
