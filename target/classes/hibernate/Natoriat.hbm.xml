@@ -4,14 +4,14 @@
 <hibernate-mapping>
     <class name="io.github.tortuvshin.natoriat.model.Natoriat" table="NATORIAT">
         <id name="natoriatId" type="java.lang.Long">
-            <column name="NATORIATID" />
+            <column name="natoriat_id" />
             <generator class="assigned" />
         </id>
         <property name="natoriatCode" type="java.lang.String">
-            <column name="NATORIATCODE" length="10" unique="true"/>
+            <column name="natoriat_code" length="10" unique="true"/>
         </property>
         <property name="natoriatName" type="java.lang.String">
-            <column name="NATORIATNAME" length="20" unique="true"/>
+            <column name="natoriat_name" length="50" unique="true"/>
         </property>
     </class>
 </hibernate-mapping>

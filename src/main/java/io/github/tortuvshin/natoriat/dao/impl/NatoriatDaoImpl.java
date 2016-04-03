@@ -10,19 +10,19 @@ import io.github.tortuvshin.natoriat.model.Natoriat;
 
 public class NatoriatDaoImpl extends HibernateDaoSupport implements NatoriatDao{
 	
-	void save(Natoriat natoriat){
+	public void save(Natoriat natoriat){
 		getHibernateTemplate().save(natoriat);
 	}
 	
-	void update(Natoriat natoriat){
+	public void update(Natoriat natoriat){
 		getHibernateTemplate().update(natoriat);
 	}
 	
-	void delete(Natoriat natoriat){
+	public void delete(Natoriat natoriat){
 		getHibernateTemplate().delete(natoriat);
 	}
 	
-	Natoriat findByNatoriatCode(String natoriatCode){
+	public Natoriat findByNatoriatCode(String natoriatCode){
 		
 		List list = getHibernateTemplate().find("from Natoriat where natoriatCode=?", natoriatCode);
 		return (Natoriat)list.get(0);
