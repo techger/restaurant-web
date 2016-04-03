@@ -1,8 +1,8 @@
-package io.github.tortuvshin.natoriat.bo;
+package io.github.tortuvshin.natoriat.dao;
 
 import io.github.tortuvshin.natoriat.model.Natoriat;
 
-public interface NatoriatBo {
+public interface NatoriatDao {
 
 	void save(Natoriat natoriat);
 	
@@ -11,4 +11,5 @@ public interface NatoriatBo {
 	void delete(Natoriat natoriat);
 	
 	Natoriat findByNatoriatCode(String natoriatCode);
+
 }

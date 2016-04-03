@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+    <class name="io.github.tortuvshin.natoriat.model.Natoriat" table="NATORIAT">
+        <id name="natoriatId" type="java.lang.Long">
+            <column name="NATORIATID" />
+            <generator class="assigned" />
+        </id>
+        <property name="natoriatCode" type="java.lang.String">
+            <column name="NATORIATCODE" length="10" unique="true"/>
+        </property>
+        <property name="natoriatName" type="java.lang.String">
+            <column name="NATORIATNAME" length="20" unique="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
