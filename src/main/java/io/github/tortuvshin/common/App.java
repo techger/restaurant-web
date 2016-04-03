@@ -13,7 +13,7 @@ public class App {
 
 		ApplicationContext appContext = 
 				new ClassPathXmlApplicationContext("spring/config/BeanLocations.xml");
-		
+		System.out.println(appContext);
 		NatoriatBo natoriatBo = (NatoriatBo)appContext.getBean("natoriatBo");
 		
 		Natoriat natoriat = new Natoriat();
