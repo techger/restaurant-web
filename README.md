@@ -1,1 +1,1 @@
-#Java vaadin, spring, hibernate example
+Restaurant pos system
