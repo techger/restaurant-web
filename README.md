@@ -1,1 +1,1 @@
-Restaurant pos system
+Restaurant
